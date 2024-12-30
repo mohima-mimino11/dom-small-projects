@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 id="title">FCC SURVEY</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </header>
+    
+        <form  id="survey-form">
+         <input type="text" id="name" name="name" placeholder="Enter your name" required>
+         <label for="name" id="name-label">Name</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+         <label for="email" id="email-label">Email</label>
+         <input type="number" id="number" name="number" placeholder="Enter your number" min="1" max="11" required>
+         <label for="number" id="number-label">Number</label>
+         <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" required>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="prefer">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>
+                <p>Would you recommend freecodecamp to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" name="user-recommend" value="definitely" id="definitely" checked>
+                    Definitely</label>
+                    <label for="maybe">
+                        <input type="radio" name="user-recommend" value="maybe" id="maybe">
+                        Maybe</label>
+                    <label for="not-sure">
+                        <input type="radio" name="user-recommend" value="not-sure" id="not-sure">
+                        Not sure</label>
+                    <p>What is your favorite feature of freecodecamp?</p>
+                    <label for="challenges">
+                        <input type="checkbox" name="user-recommend" value="challenges" id="challenges" checked>
+                        Challenges</label>
+                        <label for="projects">
+                            <input type="checkbox" name="user-recommend" value="projects" id="projects">
+                            Projects</label>
+                        <label for="community">
+                            <input type="checkbox" name="user-recommend" value="community" id="community">
+                            Community</label>
+                        <label for="open-source">
+                            <input type="checkbox" name="user-recommend" value="open-source" id="open-source">
+                            Open Source</label>
+                        <p>Any comments or suggestions?</p>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                        <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>
